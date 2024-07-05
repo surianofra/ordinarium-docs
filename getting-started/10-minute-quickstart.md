@@ -1,28 +1,28 @@
 ---
 description: >-
-  Get started creating your account, restaurant and setting up your menus. Place
-  a test order and see the order management process.
+  Inizia a creare il tuo account, il tuo ristorante e a impostare i tuoi menu.
+  Effettuate un ordine di prova e verifica il processo di gestione degli ordini.
 ---
 
-# 10-Minute Quickstart
+# Avvio rapido in 10 minuti
 
 {% embed url="https://youtu.be/Cd171XS0IGI" %}
-Quickstart video tutorial
+Video Tutoria Avvio Rapido
 {% endembed %}
 
-## Quick-start Steps
+## Passi di avvio rapido
 
-1. Visit https://www.cloudwaitress.com and sign up for an account
-2. Once you are at the admin dashboard, press "Create New Restaurant"
-3. Fill out your restaurant details and create the restaurant
-4. Click on your new restaurant to see the restaurant dashboard
-5. On the left menu, visit the "Menus" section
-6. Create a menu, create a category and then create a standard dish under it
-7. On the left menu, click on "Orders" to view the order management interface
-8. Open up your online store in a new tab by pressing "Visit Store" on the left menu
-9. Place an order through your website
-10. See the order come through automatically on your orders page. Select the order and try changing the order status or wait time. Use the "Actions" select to delete the test order when done
+1. Visita https://ordinarium.it e registra un account.
+2. Una volta raggiunta la dashboard di amministrazione, premere "Crea nuovo ristorante".
+3. Compila i dati del ristorante e crea il ristorante.
+4. Fai clic sul nuovo ristorante per visualizzare la dashboard del ristorante.
+5. Nel menu di sinistra, visita la sezione "Menu".
+6. Crea un menu, crea una categoria e quindi crea un piatto standard sotto di essa.
+7. Nel menu di sinistra, fai clic su "Ordini" per visualizzare l'interfaccia di gestione degli ordini.
+8. Apri lo shop online in una nuova scheda premendo "Visita il negozio" nel menu a sinistra.
+9. Effettua un ordine attraverso il sito web.
+10. L'ordine arriva automaticamente nella pagina degli ordini. Seleziona l'ordine e prova a modificarne lo stato o il tempo di attesa. Utilizza il tasto "Azioni" per eliminare l'ordine di prova una volta terminato.
 
-## What's Next
+## Cosa accede dopo
 
-At this point, you can customise the system as you please and start accepting orders. We recommend you continue reading the articles in this section. You will learn how to configure the system to your requirements and manage orders in-depth.
+A questo punto, puoi personalizzare il sistema a tuo piacimento e iniziare ad accettare gli ordini. Ti consigliamo di continuare a leggere gli articoli di questa sezione. Imparerai a configurare il sistema in base alle tue esigenze e a gestire gli ordini in modo approfondito.

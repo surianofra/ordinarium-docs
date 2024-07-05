@@ -1,112 +1,112 @@
 ---
 description: >-
-  Learn what devices and printers you can use with our system. We also have a
-  list of recommended devices
+  Scopri quali dispositivi e stampanti puoi utilizzare con il nostro sistema.
+  Abbiamo anche un elenco di dispositivi consigliati.
 ---
 
-# Hardware Requirements
+# Requisiti hardware
 
-## Hardware Requirements
+## Requisiti hardware
 
-Welcome to the CloudWaitress Hardware Requirements page. Having the right hardware setup is crucial for the smooth operation of your restaurant's online ordering system. Below are our updated recommendations for a seamless experience in 2024.
+Benvenuti alla pagina dei requisiti hardware di Ordinarium. La giusta configurazione hardware è fondamentale per il buon funzionamento del sistema di ordinazione online del tuo ristorante. Di seguito sono riportate le nostre raccomandazioni aggiornate per una configurazione al top.
 
-### Stable Internet Connection
+### Connessione internet stabile
 
-A stable internet connection is essential for our cloud-based system. Here are some tips:
+Una connessione internet stabile è essenziale per il nostro sistema basato su cloud. Ecco alcuni suggerimenti:
 
-* **Dedicated Internet:** Use a dedicated Internet connection to ensure reliability.
-* **Backup Connection:** Keep a 5G mobile internet connection as a backup. In case of interruptions, use your phone in hotspot mode.
-* **Primary 5G Connection:** Consider exclusively using a 5G connection in areas with reliable mobile networks.
+* **Internet dedicato:** Utilizzare una connessione Internet dedicata per garantire l'affidabilità.
+* **Connessione di backup**: Mantenere una connessione Internet mobile 4G/5G come backup. In caso di interruzioni, utilizzare il telefono in modalità hotspot.
+* **Connessione primaria 5G**: Considerare l'utilizzo esclusivo di una connessione 5G nelle aree con reti mobili affidabili.
 
 {% hint style="warning" %}
-**Firewall Settings:** Ensure cloudwaitress.com is white-listed on your firewall to prevent connection issues.
+**Firewall Settings:** Assicuratevi che ordinarium.it sia inserito nella white list del vostro firewall per evitare problemi di connessione.
 {% endhint %}
 
-## Computer or Tablet
+## Computer o Tablet
 
-A device with internet access is essential to manage your online store and orders effectively. Tablets or larger devices are preferred, and we recommend a screen size of 9" or larger. While phone access is possible, it may be limiting.
+Un dispositivo con accesso a Internet è essenziale per gestire efficacemente lo store online e gli ordini. Sono preferibili tablet o dispositivi più grandi e si consiglia uno schermo di dimensioni pari o superiori a 9 pollici. La piattaforma è ottimizzata anche per smartphone, ma potrebbe essere meno comodo.
 
-#### Recommended Devices:
+#### Dispositivi consigliati:
 
-* **Android Tablets:** Latest version of Android (compatibility from Android 1.5)
-* **Windows Tablets/Computers:** Windows 11 (Compatibility for Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1 and Windows 10)
-* **Linux:** Requires NodeJS
+* **Tablet Androi:**Ultima versione di Android (compatibilità da Android 1.5)
+* **Windows Tablets/Computers:** Windows 11 (compatibilità con Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1 e Windows 10)
+* **Linux:** Richiede NodeJS
 
-#### Recommended Computers & Tablets
+#### Computer e tablet consigliati
 
-We highly recommend using an Android device or Windows tablet/computer. Windows provides the greatest flexibility and allows wireless order printing while using the order and table booking dashboard.
+Si consiglia vivamente di utilizzare un dispositivo Android o un tablet/computer Windows. Windows offre la massima flessibilità e consente di stampare gli ordini in modalità wireless mentre si utilizza la dashboard di prenotazione degli ordini e dei tavoli.
 
-**Worldwide Device Recommendations:**
+**Raccomandazioni per i dispositivi in tutto il mondo:**
 
-| Brand         | Model              | Type    | Notes                                       |
-| ------------- | ------------------ | ------- | ------------------------------------------- |
-| **Lenovo**    | M10 Series         | Android | Reliable, versatile, good for various tasks |
-| **Samsung**   | Galaxy Tab S7      | Android | High performance, excellent display         |
-| **Samsung**   | Galaxy Tab A7 Lite | Android | Affordable, lightweight                     |
-| **HP**        | Envy x2            | Windows | Flexible, good battery life                 |
-| **Microsoft** | Surface Pro 7      | Windows | High performance, versatile                 |
-| **Microsoft** | Surface Go 3       | Windows | Portable, budget-friendly                   |
-| **Lenovo**    | Yoga Duet 7i       | Windows | 2-in-1, powerful and flexible               |
-| **Chuwi**     | Hi10 X             | Windows | Affordable, decent performance              |
+| Brand         | Modello            | Tipo    | Note                                          |
+| ------------- | ------------------ | ------- | --------------------------------------------- |
+| **Lenovo**    | M10 Series         | Android | Affidabile, versatile, adatto a diversi scopi |
+| **Samsung**   | Galaxy Tab S7      | Android | Prestazioni elevate, display eccellente       |
+| **Samsung**   | Galaxy Tab A7 Lite | Android | Conveniente, leggero                          |
+| **HP**        | Envy x2            | Windows | Flessibile, buona durata della batteria       |
+| **Microsoft** | Surface Pro 7      | Windows | Prestazioni elevate e versatilità             |
+| **Microsoft** | Surface Go 3       | Windows | Portatile, economico                          |
+| **Lenovo**    | Yoga Duet 7i       | Windows | 2-in-1, potente e flessibile                  |
+| **Chuwi**     | Hi10 X             | Windows | Conveniente, prestazioni buone                |
 
 ***
 
-## Printers
+## Stampanti
 
 {% hint style="info" %}
-Printers are optional but useful for managing orders.  We highly recommend using a thermal receipt printer.
+Le stampanti sono opzionali ma utili per la gestione degli ordini. Si consiglia vivamente di utilizzare una stampante termica per ricevute.
 {% endhint %}
 
-#### From Windows
+#### Da Windows
 
-You can print orders using any printer with drivers installed on a Windows PC. If you can print from an application like Word or Notepad, it's compatible with our service.
+È possibile stampare gli ordini utilizzando qualsiasi stampante con i driver installati su un PC Windows. Se potete stampare da un'applicazione come Word o Notepad, è compatibile con il nostro servizio.
 
-#### From Android
+#### Da Android
 
-You can use any ESCPOS printer that is accessible via the network with an IP address (i.e., Ethernet, Wi-Fi) or connect via Bluetooth.
+È possibile utilizzare qualsiasi stampante ESCPOS accessibile in rete con un indirizzo IP (ad esempio, Ethernet, Wi-Fi) o collegarsi tramite Bluetooth.
 
-### Recommended Printers
+### Stampanti consigliate
 
-We recommend printers from [PushPrinter](https://www.pushprinter.com) as we trust and endorse these devices. Additionally, you can use any printer with Windows or Linux drivers or any printer that works with ESCPOS using Android.
+Raccomandiamo le stampanti di PushPrinter in quanto ci fidiamo e approviamo questi dispositivi. Inoltre, è possibile utilizzare qualsiasi stampante con driver Windows o Linux o qualsiasi stampante che funzioni con ESCPOS utilizzando Android.
 
-**Branded Printers (from lowest to highest price):**
+**Stampanti di marca (dal prezzo più ballo al più alto):**
 
 * PushPrinter PX-90 (Ethernet or Bluetooth)
-* Epson TM-T20 (USB or Ethernet)
+* Epson TM-T20 (USB o Ethernet)
 * Epson TM-M30 (Bluetooth)
-* Epson TM-T82-II-i (USB and Ethernet, supporting many connected devices)
+* Epson TM-T82-II-i (USB e Ethernet, supporta più dispositivi connessi)
 
-**Note:** We do NOT recommend Star printers for use with Android. If you are looking to purchase a new printer, we suggest avoiding Star printers at this point in time.
+**Nota:** NON consigliamo le stampanti Star per l'uso con Android. Se state cercando di acquistare una nuova stampante, vi consigliamo di evitare le stampanti Star in questo momento.
 
-**Other Printers:**
+**Altre stampanti:**
 
 {% hint style="warning" %}
-We do NOT recommend Star printers for use with Android.  If you are looking to purchase a new printer, we suggest avoiding Star printers at this point in time.
+NON consigliamo le stampanti Star per l'uso con Android. Se state cercando di acquistare una nuova stampante, vi consigliamo di evitare le stampanti Star in questo momento.
 {% endhint %}
 
-* Star Micronics TSP143 (Bluetooth, USB, or Wi-Fi)
+* Star Micronics TSP143 (Bluetooth, USB o Wi-Fi)
 
-For more detailed information and step-by-step guides, visit the following pages:
+Per informazioni più dettagliate e guide passo-passo, visitate le pagine seguenti:
 
-* [How to Optimize Your Internet Connection](https://support.cloudwaitress.com/internet-optimization)
-* [Choosing the Best Printer for Your Restaurant](https://support.cloudwaitress.com/printer-guide)
+* Come ottimizzare la connessione a Internet
+* Scegliere la migliore stampante per il tuo ristorante
 
-## Ideal Setup
+## Configurazione ideale
 
 <figure><img src="../.gitbook/assets/ad6d4af5a725ac939ecf89824d29f97c.webp" alt="Windows-Android-Online-Ordering-Restaurant-System"><figcaption><p>Windows/Adnroid tablet connected to Thermal Kitchen reciept printer is an ideal setup</p></figcaption></figure>
 
 ***
 
-### Frequently Asked Questions (FAQs)
+### Domande Frequenti (FAQs)
 
-**Q: Can I use a mobile phone for managing orders?** A: Yes, but we recommend using a tablet or a larger device for a better experience.
+**D: Posso utilizzare un telefono cellulare per gestire gli ordini?** \
+R: Sì, ma consigliamo di utilizzare un tablet o un dispositivo più grande per un'esperienza migliore.
 
-**Q: What should I do if my internet connection is unstable?** A: Consider using a 5G mobile connection as a backup or exclusively if reliable.
+**D: Cosa devo fare se la mia connessione a Internet è instabile?** \
+R: Considerate l'utilizzo di una connessione mobile 5G come backup o esclusiva se affidabile.
 
-For further assistance, feel free to [contact us](https://support.cloudwaitress.com/contact).
+Per ulteriore assistenza, non esitare a contattarci.
 
-Explore more at [CloudWaitress.com](https://www.cloudwaitress.com).
+Per saperne di più, visita il sito **ordinarium.it**
 
 ***
-
-Next: [Getting Started](https://support.cloudwaitress.com/getting-started)

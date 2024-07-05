@@ -1,10 +1,10 @@
 # Table of contents
 
-* [Overview](README.md)
-* [Getting Started](getting-started/README.md)
-  * [Hardware Requirements](getting-started/hardware-requirements-1.md)
-  * [10-Minute Quickstart](getting-started/10-minute-quickstart.md)
-  * [Setup Your Menus](getting-started/setup-your-menus.md)
+* [Panoramica](README.md)
+* [Per cominciare](getting-started/README.md)
+  * [Requisiti hardware](getting-started/hardware-requirements-1.md)
+  * [Avvio rapido in 10 minuti](getting-started/10-minute-quickstart.md)
+  * [Impostazione dei Menu](getting-started/setup-your-menus.md)
   * [Configure Your Services](getting-started/configure-your-services.md)
   * [Customize Your Design](getting-started/customize-your-design/README.md)
     * [Hide Store Header Section (header image)](getting-started/customize-your-design/hide-store-header-section-header-image.md)

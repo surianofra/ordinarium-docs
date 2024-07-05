@@ -1,11 +1,11 @@
 ---
 description: >-
-  Welcome to the CloudWaitress Knowledge Base! Here, you'll find comprehensive
-  articles to help you set up and master our platform, whether you're just
-  starting or looking to optimise your operations.
+  Benvenuti nel Knowledge Base di Ordinarium! Qui troverete articoli che vi
+  aiuteranno a configurare e padroneggiare la piattaforma, sia che siate agli
+  inizi sia che vogliate ottimizzare le attività.
 ---
 
-# Overview
+# Panoramica
 
 ### **Sections:**
 
@@ -13,7 +13,7 @@ description: >-
 [getting-started](getting-started/)
 {% endcontent-ref %}
 
-Quick start guides to help you set up your account and launch your store smoothly.
+Guide rapide per aiutarvi a configurare il vostro account e a lanciare il vostro store senza problemi.
 
 ***
 
@@ -21,21 +21,21 @@ Quick start guides to help you set up your account and launch your store smoothl
 [how-to-guides](how-to-guides/)
 {% endcontent-ref %}
 
-Step-by-step tutorials for various features and functionalities.
+Tutorial passo-passo per varie caratteristiche e funzionalità.
 
 {% content-ref url="platform-information/" %}
 [platform-information](platform-information/)
 {% endcontent-ref %}
 
-In-depth details about our platform's capabilities and configurations.
+Dettagli approfonditi sulle capacità e le configurazioni della nostra piattaforma.
 
-### **Featured Articles:**
+### **Articoli in evidenza**
 
-* [Setting Up Online Payments](https://support.cloudwaitress.com/online-payments): Learn how to integrate and manage payment options.
-* [Customizing Your Store](https://support.cloudwaitress.com/customize-store): Tips and tricks to personalize your online store for a better customer experience.
-* [Order Management](https://support.cloudwaitress.com/order-management): Efficiently handle and track orders to ensure customer satisfaction.
+* Impostazione dei pagamenti online: Impara a integrare e gestire le opzioni di pagamento.
+* Personalizzazione del negozio: Suggerimenti e trucchi per personalizzare il vostro store online e migliorare l'esperienza dei clienti.
+* Gestione degli ordini: Gestisci e traccia in modo efficiente gli ordini per garantire la soddisfazione dei clienti.
 
-For further assistance, feel free to [contact us](https://support.cloudwaitress.com/contact).
+Per ulteriore assistenza, non esitate a contattarci.
 
 ***
 

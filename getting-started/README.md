@@ -1,10 +1,11 @@
 ---
 description: >-
-  This section will take you through the process of creating your account,
-  setting up your restaurant, customizing your settings and managing orders.
+  Questa sezione illustra il processo di creazione dell'account, l'impostazione
+  del ristorante, la personalizzazione delle impostazioni e la gestione degli
+  ordini.
 ---
 
-# Getting Started
+# Per cominciare
 
 {% content-ref url="hardware-requirements-1.md" %}
 [hardware-requirements-1.md](hardware-requirements-1.md)
@@ -35,5 +36,5 @@ description: >-
 {% endcontent-ref %}
 
 {% hint style="info" %}
-[Create account at CloudWaitress.com](https://www.cloudwaitress.com/signup/)
+Crea un account su Ordinarium.it
 {% endhint %}

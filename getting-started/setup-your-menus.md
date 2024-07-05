@@ -1,98 +1,98 @@
 ---
 description: >-
-  To accept orders online, you need to set up your online menu. You can create
-  and manage all your menus under the "Menus" section in the restaurant
-  dashboard.
+  Per accettare ordini online, è necessario impostare il proprio menu online. È
+  possibile creare e gestire tutti i menu nella sezione "Menu" della dashboard
+  del ristorante.
 ---
 
-# Setup Your Menus
+# Impostazione dei Menu
 
 {% embed url="https://youtu.be/Nyyr2vwB1Io" %}
-Menu setup video tutorial
+Video Tutorial Imostazione Menu
 {% endembed %}
 
-## Setup Process
+## Processo di impostazione
 
-Menus are organized in a tree structure. Menus contain categories and categories contain dishes. The general setup process is as follows.
+I menu sono organizzati in una struttura ad albero. I menu contengono categorie e le categorie contengono piatti. Il processo di configurazione generale è il seguente.
 
-1. Create a menu
-2. Create all the categories under the menu
-3. Create dishes under the categories
-4. Create option-sets to add customization to dishes
-5. Create dish tags to highlight attributes of particular dishes
+1. Crea un menù
+2. Crea tutte le categorie del menu
+3. Crea i piatti nelle categorie
+4. Crea set di opzioni per aggiungere personalizzazione ai piatti
+5. Creare tag di piatti per evidenziare gli attributi di particolari piatti e per segnalare gli allergeni.
 
 {% hint style="info" %}
-You will likely only need one menu. Multiple menus are useful if certain items are restricted in particular ways. You may need to create a "Breakfast" menu or a "Delivery" menu depending on your requirements
+Probabilmente avrai bisogno di un solo menu. I menu multipli sono utili se alcune voci sono soggette a particolari restrizioni. Potrebbe essere necessario creare un menu "Colazione" o un menu "Consegna", a seconda delle esigenze.
 {% endhint %}
 
-## Example Menu Structure
+## Esempio della struttura di un menù
 
 ```
-- Menu: Main menu
--- Category: Pizzas
----- Dish: Ham & Cheese
----- Dish: Margrita
----- Dish: Veggie Supreme
--- Category: Sides
----- Dish: Chicken Wings
----- Dish: Fries
--- Category: Drinks
----- Dish: Iced Tea
----- Dish: Cola
----- Dish: Water
+- Menu: menu principale
+-- Categoria: Pizze
+---- Piatto: Prosciutto
+---- Piatto: Margherita
+---- Piatto: Vegetariana
+-- Categoria: Sfiziosità
+---- Piatto: Alette di Pollo
+---- Piatto: Patatine Fritte
+-- Categoria: Bevande
+---- Piatto: Te freddo
+---- Piatto: Coca Cola
+---- Piatto: Acqua
 ```
 
-## Menus
+## Menu
 
-These represent your actual real-life menus. Many stores have just one main menu that's always available. Others may have a lunch & dinner menu or a pickup only menu. You will need at least one menu for your online store to work.
+Questi rappresentano i menu reali. Molti locali hanno un solo menu principale sempre disponibile. Altri possono avere un menu per pranzo e cena o un menu per il solo ritiro. Per far funzionare le funzioni di ordini è necessario almeno un menu.
 
-Menu availability can depend on certain conditions such as order types (pickups, deliveries or dine-ins), order timings (now, later or pre-order only). They can also be restricted to certain days and timings.
+Si possono limitare o bloccare i menù in base ad alcune condizioni, come ad esempio il tipo di ordine (ritiro, consegna o al tavolo), la tempistica dell'ordine (subito, più tardi o solo su ordinazione). Possono anche essere limitati a determinati giorni e orari.
 
 {% hint style="info" %}
-If you only have one menu available, there is no need to place restrictions on it. You can restrict the system globally to your business rules and the menu will work according to that. Restricting a menu to certain conditions is only needed if you have multiple menus
+Se si dispone di un solo menu, non è necessario imporre restrizioni. È possibile limitare il sistema a livello globale in base alle proprie regole aziendali e il menu funzionerà in base a tali regole. La restrizione di un menu a determinate condizioni è necessaria solo se si dispone di più menu.
 {% endhint %}
 
-## Categories
+## Categorie
 
-Categories represent a sub-section of a menu and consist of dishes. For example, if you have one standard menu, your categories might include:
+Le categorie rappresentano una sottosezione di un menu e sono composte da piatti. Ad esempio, se avete un menu standard, le categorie potrebbero includere:
 
-* Starters
-* Mains
-* Sides
-* Drinks
-* Desserts
+* Antipasti
+* Primo
+* Secondi
+* Bevande
+* Dolci
 
 {% hint style="info" %}
-In some instances, you may need to create a separate menu instead of using a category. For example, If you have many different categories of drinks, such as spirits, wines, beers, sodas, etc. You might want to create a separate drinks menu for all those categories instead of adding it to your food menu.
+In alcuni casi, potrebbe essere necessario creare un menu separato invece di utilizzare una categoria. Ad esempio, se hai molte categorie diverse di bevande, come liquori, vini, birre, bibite, ecc. si potrebbe creare un menu bevande separato per tutte queste categorie, invece di aggiungerle al menu degli alimenti.
 {% endhint %}
 
-## Dishes
+## Piatti
 
-Dishes represent actual items that can be purchased. There are 2 types of dishes.
+I piatti rappresentano oggetti reali che possono essere acquistati. Esistono 2 tipi di piatti.
 
-#### Standard Dishes
+#### Piatti standard
 
-A standard dish works as you would expect. You would use it to create items such:
+Un piatto standard funziona come ci si aspetta. Lo si usa per creare oggetti come:
 
-* Ham sandwich
-* Veggie pizza
-* Vanilla ice-cream
+* Toast Classico
+* Pizza Margherita
+* Gelato alla vaniglia
 
-**Dish Ingredients**
+**Ingredienti dei piatti**
 
-Standard dishes can contain a list of ingredients. The purpose of this is to allow customers to easily remove certain ingredients. A customer can remove the desired ingredients when they select the dish.
+I piatti standard possono contenere un elenco di ingredienti. Lo scopo è quello di consentire ai clienti di rimuovere facilmente alcuni ingredienti. Il cliente può rimuovere gli ingredienti indesiderati quando seleziona il piatto.
 
-#### Combo Dishes
+#### Piatti combinati
 
-Combos are a special type of dish that contain other dishes. It allows you to create a list of choices for customers to select various standard dishes. For example, you can create:
+Le combinazioni sono un tipo speciale di piatti che contengono altri piatti. Consente di creare un elenco di scelte per i clienti che possono selezionare vari piatti standard. Ad esempio, è possibile creare:
 
-* Choose 3 pizzas, 2 sides and 2 drinks
-* Choose a burger, side and drink
+* Scegli 3 pizze, 2 contorni e 2 bevande
+* Scegli un hamburger, un contorno e una bevanda
 
-To do this you will first need to have created some standard dishes. Then when creating your combo, you can create 4 choices, 3 pizza choices and one drink choice. You can then assign dish choices to the pizzas and drinks for customers to choose from.
+Per farlo, è necessario aver creato alcuni piatti standard. Poi, quando si crea la combo, si possono creare 4 scelte, 3 scelte di pizza e una scelta di bevanda. È quindi possibile assegnare le scelte dei piatti alle pizze e alle bevande, in modo che i clienti possano scegliere.
 
 {% hint style="info" %}
-Combo dishes cannot contain option sets or ingredients directly. Instead when a customer chooses a standard dish within a combo, if the chosen standard dish has any option sets assigned to it, a user can customize it accordingly.
+I piatti combinati non possono contenere direttamente set di opzioni o ingredienti. Invece, quando un cliente sceglie un piatto standard all'interno di un combo, se il piatto standard scelto ha dei set di opzioni assegnati, l'utente può personalizzarlo di conseguenza.
 {% endhint %}
 
 #### Dish Availability & Status
