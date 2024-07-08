@@ -95,17 +95,17 @@ Per farlo, è necessario aver creato alcuni piatti standard. Poi, quando si crea
 I piatti combinati non possono contenere direttamente set di opzioni o ingredienti. Invece, quando un cliente sceglie un piatto standard all'interno di un combo, se il piatto standard scelto ha dei set di opzioni assegnati, l'utente può personalizzarlo di conseguenza.
 {% endhint %}
 
-#### Dish Availability & Status
+#### Disponibilità e stato dei piatti
 
-There are 3 statuses available for a dish. They are:
+Sono disponibili 3 stati per un piatto che sono:
 
-* Hidden - hides dish from the menu
-* Available - shows dish from the menu and allows ordering
-* Out of stock - prevents ordering and shows out of stock on the dish
+* Nascosto - nasconde il piatto dal menu
+* Disponibile - mostra il piatto dal menu e permette di ordinarlo
+* Esaurito - impedisce l'ordine e mostra lo stato esaurito piatto
 
-In the admin dashboard, you can edit the status of a dish by checking the tickbox on the left of it. Then select the desired status from the popup menu.
+Nella dashboard di amministrazione, è possibile modificare lo stato di un piatto selezionando la casella di controllo a sinistra. Quindi selezionare lo stato desiderato dal menu a comparsa.
 
-## Option Sets
+## Set di Opzioni
 
 All **dish customization is done using option sets**. Option sets are a configurable set of options that can be assigned to any number of dishes. With option sets, you are able to create requirements such as:
 
