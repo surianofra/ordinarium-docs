@@ -107,30 +107,32 @@ Nella dashboard di amministrazione, è possibile modificare lo stato di un piatt
 
 ## Set di Opzioni
 
-All **dish customization is done using option sets**. Option sets are a configurable set of options that can be assigned to any number of dishes. With option sets, you are able to create requirements such as:
+Tutte le **personalizzazioni dei piatti** vengono effettuate utilizzando i set di opzioni. I set di opzioni sono un insieme configurabile di opzioni che possono essere assegnate a qualsiasi numero di piatti. Con i set di opzioni è possibile creare requisiti quali:
 
-* Select your pizza crust
-* Select one or more sauces
-* Select at least 4 toppings
+* Selezionare il cornicione della pizza
+* Selezionare una o più salse
+* Selezionare almeno 4 condimenti
 
 {% hint style="info" %}
-To learn how to create an option set that meets your requirements, read the descriptions of each of the settings available when creating an option set. Each setting is explained in detail. Alternatively, watch our menu setup video above to see us create the above examples.
+Per imparare a creare un set di opzioni che soddisfi le tue esigenze, leggi le descrizioni di ciascuna delle impostazioni disponibili quando si crea un set di opzioni. Ogni impostazione è spiegata in dettaglio. In alternativa, guarda il nostro video di impostazione del menu qui sopra per vedere come abbiamo creato gli esempi di cui sopra.
 {% endhint %}
 
-## Dish Tags
+## Tag piatti
 
-Tags allow you to highly particular attributes about a dish with a fully customizable visual indicator. You can create tags for attributes such as:
+I tag consentono di evidenziare attributi particolari di un piatto con un indicatore visivo completamente personalizzabile. È possibile creare tag per attributi come ad esempio:
 
-* Spicy
-* Vegan
-* Gluten free
+* Piccante
+* Vegano
+* Senza Glutine
 
-## Common Menu Problems
+Si può creare ogni tipo di tag personalizzato, inclusi gli allergeni. Ogni tag può essere accompagnato da un'icona e da un'abbreviazione.
 
-### **No menu or categories showing under the store**
+## Problemi comuni dei menu
 
-For your menu to display in your online store, make sure to add at least one category and one dish to it.
+### Il menu o le categorie non vengono visualizzati nel ristorane
 
-### **Dish images to large**
+Affinché il menu venga visualizzato nel tuo ristorante online, assicurati di aggiungere almeno una categoria e un piatto.
 
-We highly recommend that you use the website [https://www.birme.net](https://www.birme.net) or [https://tinypng.com/](https://tinypng.com/) to optimize all your images. Given that the maximum image width is only around 600 pixels, it's best to make sure all your images are no wider than that. This is going to help significantly with your page load time especially for mobile customers.
+### Immagini del piatto troppo grande
+
+Si consiglia vivamente di utilizzare il sito [https://www.birme.net](https://www.birme.net) o [https://tinypng.com/](https://tinypng.com/) per ottimizzare tutte le immagini. Dato che la larghezza massima delle immagini è di 600 pixel circa, è meglio assicurarsi che tutte le immagini non siano più larghe di così. Ciò contribuirà in modo significativo al tempo di caricamento della pagina, soprattutto da smartphone e tablet.
