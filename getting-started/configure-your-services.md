@@ -4,61 +4,61 @@ description: >-
   our video for an in-depth explanation of all the settings available.
 ---
 
-# Configure Your Services
+# Configurare i servizi
 
 {% embed url="https://youtu.be/EUW9nZVAE68" %}
 Services video tutorial
 {% endembed %}
 
-There are 4 services currently available. They are:
+Attualmente sono disponibili 4 servizi che sono:
 
-* Pickup - orders that are picked up in store by customers to take away
-* Delivery - orders that are delivered to the customer's address
-* Dine-in - orders that are placed by customers currently seated in your store
-* Table booking - a reservation made for a later date and time
+* Pickup - ordini che vengono ritirati nel locale dai clienti per essere portati via
+* Delivery - ordini che vengono consegnati all'indirizzo del cliente
+* Dine-in - ordini effettuati dai clienti all'interno del locale, anche direttamente dal tavolo
+* Table booking - una prenotazione effettuata per una data e un orario successivi
 
-## How To Configure Your Services
+## Come configurare i servizi
 
-1. Visit your restaurant dashboard and go to the settings page
-2. Select the "Services" tab and edit your settings as required
+1. Visita la dashboard del locale e vai alla pagina delle impostazioni.
+2. Seleziona la scheda "Servizi" e modifica le impostazioni come si preferisce.
 
-## Enabling & Disabling Services
+## Abilitare e disabilitare dei servizi
 
-You can enable or disable services as needed. Go to the desired service settings and simply toggle the "Enabled" switch to enable or disable it.
+È possibile attivare o disattivare i servizi a seconda delle necessità. Vai alle impostazioni del servizio desiderato e premi l'interruttore "Enabled" per attivarlo o disattivarlo.
 
 {% hint style="info" %}
-You must have at least one service enabled
+È necessario che sia abilitato almeno un servizio
 {% endhint %}
 
-## Service Notes
+## Note nei servizio
 
-You can add custom notes for each service that will be shown to the customer when selected. Useful if you need to convey an important message to your customer
+È possibile aggiungere note personalizzate per ogni servizio, che verranno mostrate al cliente una volta selezionato. Utile se hai bisogno di trasmettere un messaggio importante al cliente.
 
-## Order Timings
+## Tempi dell'ordine
 
-A customer is only able to place an order due immediately if your store is opened. Orders for a later date must be scheduled within your opening hours. As such, order timings are mostly controlled by your store opening hours. From there, each service has it's own separate order timing settings that allow your more in-depth control.
+Un cliente può effettuare un ordine con scadenza immediata solo se il locale è aperto. Gli ordini per una data successiva devono essere programmati entro gli orari di apertura del locale. Pertanto, le tempistiche degli ordini sono controllate principalmente dagli orari di apertura del negozio. Ogni servizio ha poi le proprie impostazioni separate per la tempistica degli ordini, che consentono un controllo più approfondito.
 
-### Enabling & Disabling Order Times
+### Abilitare e disabilitare i tempi di ordinazione
 
-Under the "Order Timings" tab in the service settings, you can enable and disable both immediate and scheduled orders.
+Nella scheda "Order Timings" delle impostazioni del servizio, è possibile attivare e disattivare gli ordini immediati e quelli programmati.
 
-### First Order Offset
+### Scostamento primo ordine
 
-This is the period of time from when your store first opens to when you will accept the first order. For example, if the first order offset is set to 30 minutes and your store opens at 9:00am, the first order can be placed or scheduled at 9:30am.
+È il periodo di tempo che intercorre tra l'apertura del locale e l'accettazione del primo ordine. Ad esempio, se l'offset del primo ordine è impostato su 30 minuti e il locale apre alle 9:00, il primo ordine può essere inserito o programmato alle 9:30.
 
-### Last Order Offset
+### Scostamento ultimo ordine
 
-This is the period of time from when your store closes to when the last order will be accepted. For example, if the last order offset is set to 30 minutes and your store closes at 9:00pm, the last order can be placed or scheduled at 8:30pm.
+È il periodo di tempo che intercorre tra la chiusura del locale e l'accettazione dell'ultimo ordine. Ad esempio, se l'offset dell'ultimo ordine è impostato su 30 minuti e il locale chiude alle 21:00, l'ultimo ordine potrà essere inserito o programmato alle 20:30.
 
-### Order Offset
+### Scostamento Ordine
 
-The normal order offset only applies for scheduled orders at a later time. This is the period from now when a scheduled order can be made. For example, it's there to prevent customers from scheduling order in the next 10 minutes instead of just asking for it to be due ASAP.
+La normale compensazione degli ordini si applica solo agli ordini programmati in un momento successivo. Si tratta del periodo a partire dal quale è possibile effettuare un ordine programmato. Ad esempio, serve per evitare che i clienti programmino un ordine nei prossimi 10 minuti, invece di chiedere che venga effettuato il prima possibile.
 
-So for example, if your order offset is 30 minutes and the current time is 6:00pm, the next time a customer can schedule an order would be 7:00pm. If they want it before 7:00pm, they can still just order for ASAP instead. If the order offset was 15 minutes, then the customer can order for 6:30pm.
+Quindi, ad esempio, se lo scostamento degli ordini è di 30 minuti e l'ora corrente è 18:00, il momento successivo in cui un cliente può programmare un ordine è alle 19:00. Se lo desidera prima delle 19:00, il cliente può programmarlo prima delle 19:00. Se lo desidera prima delle 19:00, può comunque ordinare al più presto. Se lo scostamento dell'ordine è di 15 minuti, il cliente può ordinare per le 18:30.
 
-The order offset also acts as a cut-off point to give you time to meet the order schedule. For example, if it's 6:00pm and your order offset is 30 minutes. If the customer is scheduling an order for 7:00pm, they must place the order before 6:30pm. This is to give you 30 minutes to meet the scheduled time.
+L'offset dell'ordine funge anche da punto di interruzione per dare il tempo di soddisfare la pianificazione dell'ordine. Ad esempio, se sono le 18:00 e l'offset dell'ordine è di 30 minuti. Se il cliente ha programmato un ordine per le 19:00, deve effettuare l'ordine prima delle 18:30. Questo per darti 30 minuti per rispettare l'orario previsto.
 
-If they take too long and the time passes 6:30pm, they will receive a notification to tell them that the order has been changed to due ASAP instead of their scheduled time, 7:00pm.
+Se il cliente impiega troppo tempo e l'orario supera le 18:30, riceverà una notifica che gli comunicherà che l'ordine è stato modificato per essere consegnato al più presto, invece che alle 19:00, orario previsto.
 
 ## Custom Service Hours
 
@@ -93,7 +93,7 @@ Both estimated wait times and automated status updates are connected to the same
 
 ### Estimated Wait Times
 
-As stated, customer wait times are calculated using the above timing settings.&#x20;
+As stated, customer wait times are calculated using the above timing settings.
 
 #### How estimated wait time are calculated for pickup or dine-in orders
 
@@ -103,7 +103,7 @@ If you have not added a value for time till confirm or time till ready, the esti
 
 #### How estimated wait time is calculate for delivery orders
 
-For deliveries, the wait time is calculating by adding the **time till confirm** + **time till ready** + **time till on route** together. Then the **driving time** is added onto that. The driving time is determined using an external service that takes into account traffic data. This provides the customer with an extremely accurate wait time for their order to be delivered. Assuming&#x20;
+For deliveries, the wait time is calculating by adding the **time till confirm** + **time till ready** + **time till on route** together. Then the **driving time** is added onto that. The driving time is determined using an external service that takes into account traffic data. This provides the customer with an extremely accurate wait time for their order to be delivered. Assuming
 
 If you have not added a value for time till confirm or time till ready or time till on route, the delivery time would not be calculated.
 

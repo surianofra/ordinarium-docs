@@ -5,7 +5,7 @@
   * [Requisiti hardware](getting-started/hardware-requirements-1.md)
   * [Avvio rapido in 10 minuti](getting-started/10-minute-quickstart.md)
   * [Impostazione dei Menu](getting-started/setup-your-menus.md)
-  * [Configure Your Services](getting-started/configure-your-services.md)
+  * [Configurare i servizi](getting-started/configure-your-services.md)
   * [Customize Your Design](getting-started/customize-your-design/README.md)
     * [Hide Store Header Section (header image)](getting-started/customize-your-design/hide-store-header-section-header-image.md)
   * [Managing Orders & Bookings](getting-started/managing-orders-and-bookings.md)
