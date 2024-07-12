@@ -1,7 +1,7 @@
 ---
 description: >-
-  Your restaurant services represent the various order types you accept. View
-  our video for an in-depth explanation of all the settings available.
+  I servizi locale rappresentano i vari tipi di ordine che accetti. Guarda il
+  video per una spiegazione approfondita di tutte le impostazioni disponibili.
 ---
 
 # Configurare i servizi
@@ -60,22 +60,22 @@ L'offset dell'ordine funge anche da punto di interruzione per dare il tempo di s
 
 Se il cliente impiega troppo tempo e l'orario supera le 18:30, riceverà una notifica che gli comunicherà che l'ordine è stato modificato per essere consegnato al più presto, invece che alle 19:00, orario previsto.
 
-## Custom Service Hours
+## Orari di servizio personalizzati
 
-Each service can have its own independent operating hours. Setting custom operating hours for a particular service will override the operating hours set for your store location.
+Ogni servizio può avere un proprio orario indipendente. L'impostazione di orari personalizzati per un particolare servizio sovrascrive gli orari generici per quel servizio specifico..
 
-## Estimated Wait Times & Auto Statuses
+## Tempi di attesa stimati e stati automatici
 
-To help you better manage your orders and customer expectations, we provide a streamlined way to calculate order wait times and automatically update statuses. There are 6 order statuses:
+Per aiutarti a gestire meglio gli ordini e le aspettative dei clienti, ti forniamo un metodo semplificato per calcolare i tempi di attesa degli ordini e aggiornare automaticamente gli stati. Esistono 6 stati dell'ordine:
 
-* Un-confirmed
-* Confirmed
-* Ready
-* On Route (delivery only)
-* Complete
-* Cancelled
+* Non confermato
+* Confermato
+* Pronto
+* In arrivo (solo per delivery)
+* Completato
+* Cancellato
 
-Both estimated wait times and automated status updates are connected to the same timing settings. This is so that your status updates and wait times are in sync with each other. This avoids any customer confusion. These timing settings are:
+Sia i tempi di attesa stimati che gli aggiornamenti di stato automatici sono collegati alle stesse impostazioni di temporizzazione. In questo modo gli aggiornamenti di stato e i tempi di attesa sono sincronizzati tra loro. In questo modo si evita di confondere i clienti. Le impostazioni di temporizzazione sono:
 
 | Setting (minutes)                  | From Status | To Status |
 | ---------------------------------- | ----------- | --------- |
