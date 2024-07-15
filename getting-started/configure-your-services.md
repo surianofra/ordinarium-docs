@@ -77,96 +77,96 @@ Per aiutarti a gestire meglio gli ordini e le aspettative dei clienti, ti fornia
 
 Sia i tempi di attesa stimati che gli aggiornamenti di stato automatici sono collegati alle stesse impostazioni di temporizzazione. In questo modo gli aggiornamenti di stato e i tempi di attesa sono sincronizzati tra loro. In questo modo si evita di confondere i clienti. Le impostazioni di temporizzazione sono:
 
-| Setting (minutes)                  | From Status | To Status |
-| ---------------------------------- | ----------- | --------- |
-| Time till confirm                  | Unconfirmed | Confirmed |
-| Time till ready                    | Confirmed   | Ready     |
-| Time till on route (delivery only) | Ready       | On Route  |
-| Time till complete                 | Ready       | Complete  |
+| Impostazione (minuti)  | Da Stato       | A Stato     |
+| ---------------------- | -------------- | ----------- |
+| Tempo per la conferma  | Non confermato | Confermato  |
+| Tempo di preparazione  | Confermato     | Pronto      |
+| Tempo di partenza      | Pronto         | In consegna |
+| Tempo di completamento | Pronto         | Completo    |
 
 {% hint style="info" %}
-* Time till confirm is the time between when an order is placed to when it's confirmed. Setting time till confirm to "0" will result in instant order confirmation. You will need to also enable auto status for the confirmed status.
-* Time till ready is the time it takes you to prepare an order after it's confirmed
-* The time till on route status is effectively the time between when an order is prepared to when it is taken by the delivery driver.
-* Time till complete is useful for automatically marking orders as complete
+* Il tempo di conferma è il tempo che intercorre tra l'invio di un ordine e la sua conferma. Impostando il tempo di conferma a "0", la conferma dell'ordine sarà immediata. È necessario attivare anche lo stato automatico per la conferma.
+* Il tempo di preparazione è il tempo necessario per preparare un ordine dopo la sua conferma.
+* Il tempo di partenza è effettivamente il tempo che intercorre tra la preparazione di un ordine e il momento in cui viene preso in consegna dal rider.
+* Il tempo di completamento è utile per contrassegnare automaticamente gli ordini come completi, rispettando i tempi indicati nelle altre fasi.
 {% endhint %}
 
-### Estimated Wait Times
+### Tempi di attesa stimati
 
-As stated, customer wait times are calculated using the above timing settings.
+Come detto, i tempi di attesa dei clienti sono calcolati utilizzando le impostazioni di temporizzazione di cui sopra.
 
-#### How estimated wait time are calculated for pickup or dine-in orders
+#### Come vengono calcolati i tempi di attesa stimati per gli ordini da asporto o al tavolo
 
-For pickup and dine-in orders, the estimated wait time is calculating buy adding the **time till confirm** with the **time till ready** values. So for example, if your **time till confirm** was 5 and your **time till ready** was 20. The customer would get an estimated wait time of 20 + 5 = 25 minutes.
+Per gli ordini da asporto e al tavolo, il tempo di attesa stimato si calcola sommando i valori di tempo di conferma e di preparazione. Ad esempio, se il tempo di attesa per la conferma è di 5 minuti e il tempo di attesa per la preparazione è di 20 minuti, il cliente otterrebbe un tempo di attesa stimato di 20 + 5 = 25 minuti.
 
-If you have not added a value for time till confirm or time till ready, the estimated wait time would not be calculated.
+Se non è stato aggiunto un valore per il tempo di conferma o il tempo di preparazione, il tempo di attesa stimato non verrà calcolato.
 
-#### How estimated wait time is calculate for delivery orders
+#### Come viene calcolato il tempo di attesa stimato per gli ordini delivery
 
-For deliveries, the wait time is calculating by adding the **time till confirm** + **time till ready** + **time till on route** together. Then the **driving time** is added onto that. The driving time is determined using an external service that takes into account traffic data. This provides the customer with an extremely accurate wait time for their order to be delivered. Assuming
+Per le consegne, il tempo di attesa si calcola sommando il tempo di conferma + il tempo di preparazione + il tempo di partenza. Poi si aggiunge il tempo di guida. Il tempo di guida viene determinato utilizzando un servizio esterno che tiene conto dei dati sul traffico. In questo modo il cliente ottiene un tempo di attesa estremamente preciso per la consegna del suo ordine.
 
-If you have not added a value for time till confirm or time till ready or time till on route, the delivery time would not be calculated.
+Se non è stato aggiunto un valore per il tempo di conferma, il tempo di preparazione o il tempo di viaggio, il tempo di consegna non verrà calcolato.
 
-### Automated Statuses
+### Stati automatici
 
-Automated statuses change an order's status after a set period of time has passed. This will allow you to do things such as:
+Gli stati automatici modificano lo stato di un ordine dopo un determinato periodo di tempo. Questo vi permetterà di fare cose come:
 
-* Automatically confirm new orders
-* Mark orders as ready after a period of time
-* Mark orders as complete after a period of time
+* Confermare automaticamente i nuovi ordini
+* Contrassegnare gli ordini come pronti dopo un certo periodo di tempo
+* Contrassegnare gli ordini come completi dopo un certo periodo di tempo
 
-This is very helpful if you know your business timings well and don't want to manually be updating order statuses. Auto status updates can also be enabled or disabled on a per status basis. This way you can provide estimated wait times without auto-updating statuses. Or you can just instantly confirm orders and handle the rest manually.
+Questo è molto utile se si conoscono bene i tempi della propria attività e non si vuole aggiornare manualmente lo stato degli ordini. Gli aggiornamenti automatici dello stato possono anche essere attivati o disattivati in base allo stato. In questo modo è possibile fornire tempi di attesa stimati senza aggiornare automaticamente gli stati. Oppure si può semplicemente confermare istantaneamente gli ordini e gestire il resto manualmente.
 
-For automated status updates to work, you will need to enable it for a particular status and ensure the timing settings are added to that particular status.
+Affinché gli aggiornamenti di stato automatici funzionino, è necessario abilitarli per un particolare stato e assicurarsi che le impostazioni di temporizzazione siano aggiunte a quel particolare stato.
 
-#### How automated statuses work
+#### Come funzionano gli stati automatici
 
-Status updates are dependent on your timing settings, the type of order and the order due time. It's best explained through a series of examples.
+Gli aggiornamenti di stato dipendono dalle impostazioni di temporizzazione, dal tipo di ordine e dalla scadenza dell'ordine. Il modo migliore per spiegarlo è con una serie di esempi.
 
-For the examples, we will assume our timing settings are as follows
+Per i prossimi esempi, assumiamo che le impostazioni di temporizzazione siano le seguenti
 
-* Time till confirm - 10 minutes
-* Time till ready - 10 minutes
-* Time till on route - 10 minutes
-* Time till complete - 60 minutes
+* Tempo di conferma - 10 minuti
+* Tempo di preparazione - 10 minuti
+* Tempo di partenza - 10 minuti
+* Tempo di completamento - 60 minuti
 
-#### Pickup and dine-in examples
+#### Esempi di ritiro e ordini al tavolo
 
-If a customer places an order at 7:00pm for pickup or dine in which is due immediately
+Se un cliente effettua un ordine alle 19:00 per il ritiro o la cena, la richiesta è immediata.
 
-| Time   | Action                                                                                                                                     |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 7:00pm | Order has been placed, status unconfirmed                                                                                                  |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes                                                                        |
-| 7:20pm | Status updated to ready because time till ready is 10 minutes. This would also be the estimated order ready time as shown to the customer. |
-| 8:20pm | Status updated to complete because time till complete is 60 minutes                                                                        |
+| Ora   | Azione                                                                                                                                                              |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 19:00 | L'ordine è stato effettuato, lo stato non confermato.                                                                                                               |
+| 19:10 | Lo stato viene aggiornato a confermato perché il tempo di conferma è di 10 minuti.                                                                                  |
+| 19:20 | Lo stato viene aggiornato a pronto perché il tempo di attesa è di 10 minuti. Questo sarebbe anche il tempo stimato di preparazione dell'ordine mostrato al cliente. |
+| 20:20 | Lo stato viene aggiornato a completo perché il tempo di completamento è di 60 minuti.                                                                               |
 
-In the event that you added an extra 10 minutes onto the customers estimated order ready time, it will play out as follows:
+Se si aggiungono 10 minuti in più al tempo stimato di preparazione dell'ordine del cliente, il risultato sarà il seguente:
 
-| Time   | Action                                                                                                                  |
-| ------ | ----------------------------------------------------------------------------------------------------------------------- |
-| 7:00pm | Order has been placed, status unconfirmed, you add 10 minutes to estimated ready time                                   |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes                                                     |
-| 7:30pm | Status updated to ready because the old ready time was 7:20pm, since you added an extra 10 minutes, that becomes 7:30pm |
-| 8:30pm | Status updated to complete because time till complete is 60 minutes                                                     |
+| Ora   | Azione                                                                                                                                                 |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 19:00 | L'ordine è stato effettuato, lo stato è non confermato, si aggiungono 10 minuti al tempo di preparazione stimato.                                      |
+| 19:10 | Lo stato viene aggiornato a confermato perché il tempo di conferma è di 10 minuti.                                                                     |
+| 19:30 | Lo stato viene aggiornato a pronto perché il vecchio orario di pronto era le 19:20, ma dato che sono stati aggiunti altri 10 minuti, diventa le 19:30. |
+| 20:30 | Lo stato viene aggiornato a completo perché il tempo di completamento è di 60 minuti.                                                                  |
 
-If we are unable to calculate an estimated ready time for the order, for example if the time till confirm was missing, it would play out as follows
+Se non possiamo calcolare un tempo stimato di preparazione per l'ordine, ad esempio se manca il tempo di conferma, la situazione si presenterà come segue:
 
-| Time   | Action                                                              |
-| ------ | ------------------------------------------------------------------- |
-| 7:00pm | Order has been placed, status unconfirmed                           |
-| 7:05pm | You manually update the order status to confirmed                   |
-| 7:15pm | Status updated to ready, because the time till ready is 10 minutes  |
-| 8:15pm | Status updated to complete because time till complete is 60 minutes |
+| Ora   | Azione                                                                                |
+| ----- | ------------------------------------------------------------------------------------- |
+| 19:00 | L'ordine è stato effettuato, lo stato è non confermato.                               |
+| 19:05 | Aggiorni manualmente lo stato dell'ordine a confermato.                               |
+| 19:15 | Stato aggiornato a pronto, perché il tempo di preparazione è di 10 minuti.            |
+| 20:15 | Lo stato viene aggiornato a completo perché il tempo di completamento è di 60 minuti. |
 
-If a customer places an order at 6:00pm for pickup or dine in which is due at 7:00pm, the following would occur
+Se un cliente effettua un ordine alle 18:00 per il ritiro o ordine al tavolo, che deve essere consegnato alle 19:00, si verificherà quanto segue:
 
-| Time   | Action                                                                             |
-| ------ | ---------------------------------------------------------------------------------- |
-| 6:00pm | Order has been placed, status unconfirmed                                          |
-| 6:10pm | Status updated to confirmed because time till confirm is 10 minutes                |
-| 7:00pm | Status updated to ready, because this is when the customer scheduled the order for |
-| 8:00pm | Status updated to complete because time till complete is 60 minutes                |
+| Ora   | Azione                                                                                            |
+| ----- | ------------------------------------------------------------------------------------------------- |
+| 18:00 | L'ordine è stato effettuato, lo stato è non confermato.                                           |
+| 18:10 | Lo stato viene aggiornato a confermato perché il tempo di conferma è di 10 minuti.                |
+| 19:00 | Lo stato viene aggiornato a pronto, perché il cliente ha programmato l'ordine per questo momento. |
+| 20:00 | Lo stato viene aggiornato a completo perché il tempo di completamento è di 60 minuti.             |
 
 #### Delivery examples
 
