@@ -168,45 +168,46 @@ Se un cliente effettua un ordine alle 18:00 per il ritiro o ordine al tavolo, ch
 | 19:00 | Lo stato viene aggiornato a pronto, perché il cliente ha programmato l'ordine per questo momento. |
 | 20:00 | Lo stato viene aggiornato a completo perché il tempo di completamento è di 60 minuti.             |
 
-#### Delivery examples
+#### Esempi di delivery
 
-For the delivery examples, we will assume the driving time between your store and the delivery address is calculated as 10 minutes.
+Per gli esempi di delivery, assumiamo che il tempo di guida tra il vostro locale e l'indirizzo di consegna sia di 10 minuti.
 
-If a customer places a delivery order at 7:00pm which is due immediately
+Se un cliente effettua un ordine di consegna alle 19:00 che deve essere evaso immediatamente
 
-| Time   | Action                                                                                                                         |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| 7:00pm | Order has been placed, status unconfirmed                                                                                      |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes                                                            |
-| 7:20pm | Status updated to ready because time till ready is 10 minutes                                                                  |
-| 7:30pm | Status updated to on route because time till on route is 10 minutes. This would also be shown to you as the driver pickup time |
-| 7:40pm | Order will have been delivered to customer since the driving time is 10 minutes                                                |
-| 8:40pm | Order marked as completed because time till complete is 60 minutes                                                             |
+| Ora   | Azione                                                                                                                                                                          |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 19:00 | L'ordine è stato effettuato, lo stato è non confermato.                                                                                                                         |
+| 19:10 | Lo stato viene aggiornato a confermato perché il tempo di conferma è di 10 minuti.                                                                                              |
+| 19:20 | Stato aggiornato a pronto, perché il tempo di preparazione è di 10 minuti.                                                                                                      |
+| 19:30 | Lo stato viene aggiornato a “In viaggio” perché il tempo mancante al raggiungimento del percorso è di 10 minuti. Questo viene mostrato anche come orario di prelievo del rider. |
+| 19:40 | L'ordine viene consegnato al cliente in quanto il tempo di percorrenza è di 10 minuti.                                                                                          |
+| 20:40 | L'ordine viene contrassegnato come completato perché il tempo di completamento è di 60 minuti.                                                                                  |
 
-If we were unable to calculate the estimated delivery time and driver pickup time, say if the time till on route was missing, the following would occur
+Se non fossimo in grado di calcolare l'orario di consegna stimato e l'orario di ritiro del rider, ad esempio se mancasse il tempo di percorrenza sul percorso, si verificherebbe quanto segue
 
-| Time   | Action                                                                          |
-| ------ | ------------------------------------------------------------------------------- |
-| 7:00pm | Order has been placed, status unconfirmed                                       |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes             |
-| 7:20pm | Status updated to ready because time till ready is 10 minutes                   |
-| 7:40pm | You manually mark the order an on route for delivery                            |
-| 7:50pm | Order will have been delivered to customer since the driving time is 10 minutes |
-| 8:50pm | Order marked as completed because time till complete is 60 minutes              |
+| Tempo | Azione                                                                                         |
+| ----- | ---------------------------------------------------------------------------------------------- |
+| 19:00 | L'ordine è stato effettuato, lo stato è non confermato.                                        |
+| 19:10 | Lo stato viene aggiornato a confermato perché il tempo di conferma è di 10 minuti.             |
+| 19:20 | Stato aggiornato a pronto, perché il tempo di preparazione è di 10 minuti.                     |
+| 19:40 | Contrassegni manualmente l'ordine come in fase di consegna.                                    |
+| 19:50 | L'ordine viene consegnato al cliente in quanto il tempo di percorrenza è di 10 minuti.         |
+| 20:50 | L'ordine viene contrassegnato come completato perché il tempo di completamento è di 60 minuti. |
 
-If a customer places a delivery order at 6:00pm which is due at 7:00pm, the following would occur
+Se un cliente effettua un ordine Delivery alle 18:00 con scadenza alle 19:00, si verificherà quanto segue
 
-| Time   | Action                                                                                                                                                                                                  |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 6:00pm | Order has been placed, status unconfirmed                                                                                                                                                               |
-| 6:10pm | Status updated to confirmed because time till confirm is 10 minutes                                                                                                                                     |
-| 6:40pm | Status updated to ready because delivery time is 10 minutes and time till on route is 10 minutes, which means that the order must be ready by this time if it is going to reach your customer at 7:00pm |
-| 6:50pm | Status updated to on route because the delivery time is 10 minutes, so it has to leave your store at this time. This is also the estimated driver pickup time.                                          |
-| 7:00pm | Order will have been delivered to customer                                                                                                                                                              |
-| 8:00pm | Order marked as completed because time till complete is 60 minutes                                                                                                                                      |
+| Time  | Action                                                                                                                                                                                                                                  |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 18:00 | L'ordine è stato effettuato, lo stato è non confermato.                                                                                                                                                                                 |
+| 18:10 | Lo stato viene aggiornato a confermato perché il tempo di conferma è di 10 minuti.                                                                                                                                                      |
+| 18:40 | Lo stato viene aggiornato a pronto perché il tempo di consegna è di 10 minuti e il tempo di attesa per la partenza è di 10 minuti, il che significa che l'ordine deve essere pronto a quest'ora se deve arrivare al cliente alle 19:00. |
+| 18:50 | Lo stato viene aggiornato a “In viaggio” perché il tempo di consegna è di 10 minuti, quindi deve lasciare il locale a quest'ora. Questo è anche l'orario di ritiro stimato dal rider.                                                   |
+| 19:00 | L'ordine è stato consegnato al cliente                                                                                                                                                                                                  |
+| 20:00 | L'ordine viene contrassegnato come completato perché il tempo di completamento è di 60 minuti.                                                                                                                                          |
 
-If a delivery order is scheduled for a later time but the estimated delivery time could not be calculated, then the ready and on route status will not update automatically.
+Se un ordine di consegna è programmato per un'ora successiva, ma non è stato possibile calcolare il tempo di consegna stimato, lo stato di pronto e in viaggio non verrà aggiornato automaticamente.
 
 {% hint style="info" %}
-If ever in doubt about how the auto status timings will work for your scenario, just think about how it would logically work in a way that makes sense to your customer and you. That is how we have designed it to work.
+In caso di dubbi sul funzionamento delle tempistiche dello stato automatico per il vostro scenario, pensate a come funzionerebbe logicamente in un modo che abbia senso per il vostro cliente e per voi. Questo è il modo in cui abbiamo progettato il funzionamento.
 {% endhint %}
+
